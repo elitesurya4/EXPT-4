@@ -22,20 +22,203 @@
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-    <script src="js\script.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+
     <title>Expt 4</title>
 </head>
 <body>
 <!-------------Header Section------------->
 <div class="container-fluid" id="header">
     <div class="card card-body" id="header-glass">
-        <p class="display-6">POSITIVE CLAMPER CIRCUIT</p>
+        <p class="display-6">CLAMPER CIRCUITS</p>
     </div>
 </div>
 <!-------------Simulator Section------------->
-<div class="container-fluid" id="half-simulator">
-    <iframe id="responsive-iframe" src="https://www.multisim.com/content/nxgDF2tswcxwiDcuQzBYfA/positive-clamper-circuit/open/"></iframe>
+<div id="simulator-section">
+    <div class="container-fluid" id="dropdown">
+        <div class="accordion-container">
+            <header class="header">POSITIVE CLAMPER CIRCUIT</header>
+            <button type="button" class="accordion" id="accordion">
+                <h4 class="accordion-title">
+                    Positive clamper circuit
+                </h4>
+            </button>
+            <div class="panel">
+                <ul>
+                    <a class="btn-open-modal" data-toggle="modal" data-target="#modal"><li class="h4" style="font-weight: normal;">Pre-designed circuit</li></a>
+                    <a href="https://www.multisim.com/content/6xdSJoNSSeeFYfeckXXzBJ/positive-clamper-design-circuit/open/" target="blank"><li class="h4" style="font-weight: normal;">Design circuit</li></a>
+                </ul>
+            </div>
+            <button type="button" class="accordion" id="accordion">
+                <h4 class="accordion-title">
+                    Positive Peak detector clamper circuit
+                </h4>
+            </button>
+            <div class="panel">
+                <ul>
+                    <a class="btn-open-modal" data-toggle="modal" data-target="#modal1"><li class="h4" style="font-weight: normal;">Pre-designed circuit</li></a>
+                    <a href="https://www.multisim.com/content/UEjHBPRcwV3UxVz85PWKKN/positive-peak-detector-clamper-design-circuit/open/" target="blank"><li class="h4" style="font-weight: normal;">Design circuit</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="dropdown">
+        <div class="accordion-container">
+            <header class="header">NEGATIVE CLAMPER CIRCUIT</header>
+            <button type="button" class="accordion" id="accordion">
+                <h4 class="accordion-title">
+                    Negative clamper circuit
+                </h4>
+            </button>
+            <div class="panel">
+                <ul>
+                    <a class="btn-open-modal" data-toggle="modal" data-target="#modal2"><li class="h4" style="font-weight: normal;">Pre-designed circuit</li></a>
+                    <a href="https://www.multisim.com/content/5XqFBD82Z56ReB99gQDJVo/negative-clamper-design-circuit/open/" target="blank"><li class="h4" style="font-weight: normal;">Design circuit</li></a>
+                </ul>
+            </div>
+            <button type="button" class="accordion" id="accordion">
+                <h4 class="accordion-title">
+                    Negative peak detector clamper circuit
+                </h4>
+            </button>
+            <div class="panel">
+                <ul>
+                    <a class="btn-open-modal" data-toggle="modal" data-target="#modal3"><li class="h4" style="font-weight: normal;">Pre-designed circuit</li></a>
+                    <a href="https://www.multisim.com/content/XWjjsckZNYjNRxaZDq3cSw/negative-peak-detector-clamper-design-circuit/open/" target="blank"><li class="h4" style="font-weight: normal;">Design circuit</li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="dropdown">
+        <div class="accordion-container">
+            <header class="header">VOLTAGE DOUBLER CIRCUIT</header>
+            <button type="button" class="accordion" id="accordion">
+                <h4 class="accordion-title">
+                    Voltage doubler clamper circuit
+                </h4>
+            </button>
+            <div class="panel">
+                <ul>
+                    <a class="btn-open-modal" data-toggle="modal" data-target="#modal4"><li class="h4" style="font-weight: normal;">Pre-designed circuit</li></a>
+                    <a href="https://www.multisim.com/content/HKQMBDygvZH5BNPyyY9a8c/voltage-doubler-clamper-design-circuit/open/" target="blank"><li class="h4" style="font-weight: normal;">Design circuit</li></a>
+                </ul>
+            </div>
+    </div>
+    <script src="js\script.js"></script>
 </div>
-<a id="next-btn" type="button" class="btn btn-primary" href="negativeclamper/index.html">NEXT</a>
+<!----------------------------MODAL BOX (pre-designed circuit 1)-------------------->
+<div class="modal modal-fullscreen-xl" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">POSITIVE CLAMPER CIRCUIT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid" id="half-simulator">
+                <iframe id="responsive-iframe" src="https://www.multisim.com/content/nxgDF2tswcxwiDcuQzBYfA/positive-clamper-circuit/open/"></iframe>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!----------------------------MODAL BOX (pre-designed circuit 2)-------------------->
+<div class="modal modal-fullscreen-xl" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">POSITIVE PEAK DETECTOR CLAMPER CIRCUIT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid" id="half-simulator">
+                <iframe id="responsive-iframe" src="https://www.multisim.com/content/fnB2xtwsmvDiFpmSfCF3Gv/positive-peak-detector-clamper-circuit/open/"></iframe>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!----------------------------MODAL BOX (pre-designed circuit 3)-------------------->
+<div class="modal modal-fullscreen-xl" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">NEGATIVE CLAMPER CIRCUIT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid" id="half-simulator">
+                <iframe id="responsive-iframe" src="https://www.multisim.com/content/ZvDhS8D44sevHbt6P7bUWr/negative-clamper-circuit/open/"></iframe>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!----------------------------MODAL BOX (pre-designed circuit 4)-------------------->
+<div class="modal modal-fullscreen-xl" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">NEGATIVE PEAK DETECTOR CLAMPER CIRCUIT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid" id="half-simulator">
+                <iframe id="responsive-iframe" src="https://www.multisim.com/content/ZS3fXP69RC4rdvRx2PLRaC/negative-peak-detector-clamper-circuit/open/"></iframe>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!----------------------------MODAL BOX (pre-designed circuit 5)-------------------->
+<div class="modal modal-fullscreen-xl" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">VOLTAGE DOUBLER CLAMPER CIRCUIT</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid" id="half-simulator">
+                <iframe id="responsive-iframe" src="https://www.multisim.com/content/A8NAVhpza5Yii2hHRw49QE/voltage-doubler-clamper-circuit/open/"></iframe>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
+<div id="next">
+    <a id="next-btn" type="button" class="btn btn-primary" href="">NEXT</a>
+</div>
+
 </body>
 </html>
